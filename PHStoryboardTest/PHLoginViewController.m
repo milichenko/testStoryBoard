@@ -46,4 +46,15 @@
     NSLog(@"current: %@, in stack: %@", self.navigationController.topViewController, self.navigationController.viewControllers);
 }
 
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    textField.layer.borderWidth = 0.0f;
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+
 @end
