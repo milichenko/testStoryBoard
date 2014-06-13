@@ -48,41 +48,22 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
-#pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"FromStartToSearch"])
-    {
-        NSLog(@"%@", self.navigationController.viewControllers);
-        PHSearchViewController *loginViewController = (PHSearchViewController *)segue.destinationViewController;
-        loginViewController.isPushedWithAutoLogin = YES;
-        
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        PHLoginViewController *loginVC = (PHLoginViewController *)[sb instantiateViewControllerWithIdentifier:@"PHLoginViewController"];
-        
-        NSMutableArray *viewControllers = [[self.navigationController viewControllers] mutableCopy];
-        [viewControllers insertObject:loginVC atIndex:viewControllers.count - 1];
-        [self.navigationController setViewControllers:viewControllers];
-        
-        // NSArray *viewControllers = [self.navigationController viewControllers];
-        NSLog(@"%@", self.navigationController.viewControllers);
-        //NSArray *newViewControllers = [NSArray arrayWithObjects:[viewControllers objectAtIndex:0], [viewControllers objectAtIndex:1], thirdController,nil];
-        //[self.navigationController setViewControllers:newViewControllers];
-
-    }
-    else if ([segue.identifier isEqualToString:@"ToLoginWithoutAnimation"])
-    {
-        PHLoginViewController *loginVC = (PHLoginViewController *)segue.destinationViewController;
-        loginVC.isAutoLogin = YES;
-    }
-}
-
 #pragma mark IBAction
 
 - (IBAction)startScreenUnwindAction:(UIStoryboardSegue *)segue
 {
     NSLog(@"current: %@, in stack: %@", self.navigationController.topViewController, self.navigationController.viewControllers);
+}
+
+- (IBAction)autoLoginAction:(id)sender
+{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    
+    PHLoginViewController *loginViewController = [storyBoard instantiateViewControllerWithIdentifier:@"PHLoginViewController"];
+    PHSearchViewController *searchViewController = [storyBoard instantiateViewControllerWithIdentifier:@"PHSearchViewController"];
+    
+    [self.navigationController pushViewController:loginViewController animated:NO];
+    [self.navigationController pushViewController:searchViewController animated:YES];
 }
 
 @end

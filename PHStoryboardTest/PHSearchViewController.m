@@ -30,18 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    PHLoginViewController *loginVC = (PHLoginViewController *)[sb instantiateViewControllerWithIdentifier:@"PHLoginViewController"];
-    
-    NSMutableArray *viewControllers = [[self.navigationController viewControllers] mutableCopy];
-    [viewControllers insertObject:loginVC atIndex:0];
-    [self.navigationController setViewControllers:viewControllers];
-
-    //if (self.isPushedWithAutoLogin)
-    {
-        NSLog(@"!%@!", self.navigationController.viewControllers);
-    }
 }
 
 - (void)didReceiveMemoryWarning

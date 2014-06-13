@@ -27,7 +27,6 @@
 		63645C8C1947442C00C2DFC5 /* PHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63645C8B1947442C00C2DFC5 /* PHLoginViewController.m */; };
 		638669CC19489B3E001C0DE2 /* UINavigationController+TransparentNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 638669CB19489B3E001C0DE2 /* UINavigationController+TransparentNavBar.m */; };
 		63BC281D1949D67300C51329 /* PHSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC281C1949D67300C51329 /* PHSearchViewController.m */; };
-		63BC28201949ED4400C51329 /* PHPushNoAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC281F1949ED4400C51329 /* PHPushNoAnimationSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +69,6 @@
 		638669CB19489B3E001C0DE2 /* UINavigationController+TransparentNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TransparentNavBar.m"; sourceTree = "<group>"; };
 		63BC281B1949D67300C51329 /* PHSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSearchViewController.h; sourceTree = "<group>"; };
 		63BC281C1949D67300C51329 /* PHSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSearchViewController.m; sourceTree = "<group>"; };
-		63BC281E1949ED4400C51329 /* PHPushNoAnimationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHPushNoAnimationSegue.h; sourceTree = "<group>"; };
-		63BC281F1949ED4400C51329 /* PHPushNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHPushNoAnimationSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +137,6 @@
 				631BF04A19459F5100084AF8 /* Supporting Files */,
 				63645C8619473FD900C2DFC5 /* PHStartScreenButton.h */,
 				63645C8719473FD900C2DFC5 /* PHStartScreenButton.m */,
-				63BC281E1949ED4400C51329 /* PHPushNoAnimationSegue.h */,
-				63BC281F1949ED4400C51329 /* PHPushNoAnimationSegue.m */,
 			);
 			path = PHStoryboardTest;
 			sourceTree = "<group>";
@@ -331,7 +326,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63BC281D1949D67300C51329 /* PHSearchViewController.m in Sources */,
-				63BC28201949ED4400C51329 /* PHPushNoAnimationSegue.m in Sources */,
 				638669CC19489B3E001C0DE2 /* UINavigationController+TransparentNavBar.m in Sources */,
 				631BF05419459F5100084AF8 /* PHAppDelegate.m in Sources */,
 				63645C6F19470C2E00C2DFC5 /* PHStartScreenViewController.m in Sources */,

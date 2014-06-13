@@ -29,14 +29,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (self.isAutoLogin)
-    {
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        PHSearchViewController *searchVC = (PHSearchViewController *)[sb instantiateViewControllerWithIdentifier:@"PHSearchViewController"];
-        
-        [self.navigationController pushViewController:searchVC animated:YES];
-    }
 }
 
 - (void)didReceiveMemoryWarning
