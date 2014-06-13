@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ogi-Ra-UEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1299" y="-233"/>
+            <point key="canvasLocation" x="-1286" y="-233"/>
         </scene>
         <!--Login View Controller - Login-->
         <scene sceneID="UqQ-97-ayk">
@@ -193,15 +193,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfp-a3-iI5">
-                                <rect key="frame" x="138" y="327" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ih2-xq-K2d">
-                                <rect key="frame" x="20" y="97" width="279" height="29"/>
+                                <rect key="frame" x="20" y="97" width="279" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="K7k-7Y-hFe"/>
@@ -212,16 +205,23 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVh-s4-I3Z">
+                                <rect key="frame" x="150" y="327" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A5O-cM-UN2" firstAttribute="top" secondItem="nSz-wD-vJx" secondAttribute="top" id="2fK-Cu-xpF"/>
                             <constraint firstAttribute="bottom" secondItem="FG2-Xh-hf1" secondAttribute="bottom" constant="84" id="4ft-w0-Ud2"/>
                             <constraint firstItem="A5O-cM-UN2" firstAttribute="leading" secondItem="nSz-wD-vJx" secondAttribute="leading" id="7Pq-1a-JE5"/>
-                            <constraint firstAttribute="bottom" secondItem="Gfp-a3-iI5" secondAttribute="bottom" constant="132" id="Fxk-nl-ehX"/>
                             <constraint firstAttribute="trailing" secondItem="A5O-cM-UN2" secondAttribute="trailing" id="KAi-25-ZgH"/>
                             <constraint firstAttribute="bottom" secondItem="A5O-cM-UN2" secondAttribute="bottom" id="X6u-2B-tNL"/>
                             <constraint firstAttribute="bottom" secondItem="pjv-2I-Oj9" secondAttribute="bottom" constant="161" id="Yyg-xK-yur"/>
+                            <constraint firstAttribute="bottom" secondItem="UVh-s4-I3Z" secondAttribute="bottom" constant="132" id="qzv-2R-zWj"/>
                             <constraint firstAttribute="bottom" secondItem="sk8-s2-56j" secondAttribute="bottom" id="tFY-oa-hUE"/>
                             <constraint firstAttribute="bottom" secondItem="O7L-b3-4ES" secondAttribute="bottom" id="tim-2x-Yyd"/>
                         </constraints>
